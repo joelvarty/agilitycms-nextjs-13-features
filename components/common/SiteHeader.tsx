@@ -1,9 +1,10 @@
+"use client"
+
 import React, {useState} from "react"
 import Link from "next/link"
 import head from "next/head"
 import Image from "next/image"
 import {AgilityImage, ComponentWithInit, ContentItem, CustomInitPropsArg, ImageField} from "@agility/nextjs"
-
 
 interface ILink {
 	title: string

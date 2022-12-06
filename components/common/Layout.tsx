@@ -9,15 +9,7 @@ import SiteFooter from "./SiteFooter"
 import LoadingWidget from "./LoadingWidget"
 import {useEffect, useState} from "react"
 
-interface Props {
-	page: any
-	sitemapNode: any
-	dynamicPageItem?: any
-	notFound: boolean
-	pageTemplateName: string
-	isPreview: boolean
-	isDevelopmentMode: boolean
-}
+
 
 function Layout(props: AgilityPageProps) {
 	const {page, sitemapNode, dynamicPageItem, notFound, pageTemplateName, isDevelopmentMode, isPreview} = props
