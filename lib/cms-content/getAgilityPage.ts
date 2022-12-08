@@ -1,7 +1,7 @@
+import "server-only";
 import { AgilityPageProps } from "@agility/nextjs";
 import { getAgilityPageProps } from "@agility/nextjs/node";
 import { cache } from "react";
-
 import { previewData } from 'next/headers';
 
 export interface GetPageProps {

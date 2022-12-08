@@ -1,6 +1,8 @@
 import SEO from "#/components/common/SEO"
 import { getAgilityPage, GetPageProps } from "#/lib/cms-content/getAgilityPage"
 
+export const revalidate = 10 // revalidate this page every 10 seconds
+
 export default async function Head(props: GetPageProps) {
 	const agilityPage = await getAgilityPage(props)
 

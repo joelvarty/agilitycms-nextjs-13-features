@@ -1,8 +1,11 @@
 import React from "react"
 import {AgilityImage, ContentItem, ImageField, ModuleWithDynamic, renderHTML} from "@agility/nextjs"
 import { IPost } from "../../lib/types/IPost"
+import Image from "next/image"
 
 import {DateTime} from "luxon"
+
+
 
 const PostDetails: ModuleWithDynamic<any, IPost> = ({ dynamicPageItem, languageCode }) => {
 	if (!dynamicPageItem) {
@@ -22,7 +25,7 @@ const PostDetails: ModuleWithDynamic<any, IPost> = ({ dynamicPageItem, languageC
 		<div className="relative px-8">
 			<div className="max-w-screen-xl mx-auto">
 				<div className="h-64 md:h-96 relative">
-					<AgilityImage
+					<Image
 						src={post.image.url}
 						alt={post.image.label}
 						className="object-cover object-center rounded-lg"
